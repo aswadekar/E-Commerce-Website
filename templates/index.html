@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: #e3b34b;
+  		overflow: hidden;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        width: 100%;
+        max-width: 40rem;
+        height: 18rem;
+        text-align: center;
+    }
+
+    /* .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .logo img {
+        width: 100px;
+        height: auto;
+        margin-right: 1rem;
+    } */
+
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 12px;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        padding: 2rem;
+        width: 90%;
+        max-width: 40rem;
+    }
+
+    form input[type="text"] {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 0.5rem;
+        font-size: 1rem;
+        width: 97%;
+        margin-bottom: 1rem;
+        transition: border-color 0.3s ease-in-out;
+    }
+
+    form input[type="text"]:focus {
+        border-color: #333;
+    }
+
+    form button[type="submit"] {
+        background-color: #111f3b;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem 2rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        width: 40%;
+        margin-left: 10rem;
+    }
+
+    form button[type="submit"]:hover {
+        background-color: #e3b34b;
+    }
+
+    header {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        background-color: #111f3b;
+        color: #fff;
+        margin-top: -646px;
+        height: 70px;
+        width: 100%
+    }
+
+    .logo {
+        width: 240px;
+        height: auto;
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+  footer{
+  position: absolute;
+  height: 60px;
+  width: 104%;
+  margin-top: 686px;
+  background-color: #111f3b;
+  }
+</style>
+
+<body>
+    <header>
+        <img src="https://github.com/aswadekar/E-Commerce-Website/blob/main/logo3.jpg?raw=true" alt="ShopGenius Logo" class="logo" />
+
+    </header>
+    <div class="container">
+
+        <h1>Search  Your  Product</h1><br>
+        <form method="POST">
+            <input type="text" name="product" placeholder="Product name" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <footer>
+      
+    </footer>
+</body>
+
+</html>

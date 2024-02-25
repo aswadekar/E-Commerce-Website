@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison - Result</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+body {
+  font-family: 'Public Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #e3b34b;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 102px;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 40rem;
+}
+
+form input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+form input[type="text"]:focus {
+  border-color: #333;
+}
+
+form button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+  background-color: #444;
+}
+
+h3 {
+  /* font-size: 1.2rem; */
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+header {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #111f3b;
+  color: #fff;
+  margin-top: -40px;
+  height: 70px;
+  width: 100%
+}
+
+.logo {
+    width: 240px;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+footer{
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  margin-top: 660px;
+  background-color: #111f3b;
+  }
+  .container{
+    height: 600px;
+    margin-top: -340px;
+    margin-left: 510px;
+  }
+ .container h3 img {
+  margin-top: 15px;
+ }
+ .container h3 {
+  margin-top: 0px;
+  margin-left: 0px;
+ }
+.product-img {
+    margin-left: -500px;
+    margin-top: 40px;
+    width: 250px;
+}  
+</style>
+<body>
+  <header>
+    <img src="https://github.com/aswadekar/E-Commerce-Website/blob/main/logo3.jpg?raw=true" alt="ShopGenius Logo" class="logo" />
+  </header>
+    <h1>Product Name: {{ product }}</h1>
+    <img src="{{ product_img }}" alt="Product Image" class="product-img">
+    <div class="container">
+      <h3><img src="https://data.cbonds.com/organisations_logos/23557/1601551006amazon-625x352.jpg" alt="" width="120px" height="60px" style="margin-top: 4px;"/>Amazon: {{ amazon_price }}</h3>
+      <h3><img src="https://cdn.worldvectorlogo.com/logos/flipkart.svg" alt="" width="120px" height="60px" style="margin-top: 14px;" />Flipkart: {{ flipkart_price }}</h3>
+      <h3><img src="https://zeevector.com/wp-content/uploads/2021/02/Croma-Logo-PNG.png" alt="" width="120px" height="60px" style="margin-top: 14px;" />Croma: {{ croma_price }}</h3>
+      <h3><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Reliance_Digital.svg/491px-Reliance_Digital.svg.png" alt="" width="120px" height="60px" style="margin-top: 14px;" />Reliance Digital: {{ reliance_price }}</h3>
+    </div>
+  <footer></footer>
+
+</body>
+</html>
